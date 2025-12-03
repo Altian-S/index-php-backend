@@ -11,15 +11,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // The logic from the Node.js application
     $myCheck = false;
+    $myCheck2 = false;
     if ($myInputText01 === 'fred') {
         $myCheck = true;
+    } else if ($myInputText01 === 'Cannon') {
+        $myCheck2 = true;
     }
+    
 
     // Determine the result message and color
     if ($myCheck) {
         $checkResult = "<b style='color:green'> Cool! </b>";
+    } else if ($myCheck2){
+        $checkResult = "<span style='color:blue'> t-thats my name...</span>"; 
     } else {
-        $checkResult = "<span style='color:red'> Try the magic word 'fred'</span>";
+        $checkResult = "<span style='color:red'>Try the magic word 'fred'</span>"
     }
 }
 

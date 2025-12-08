@@ -27,7 +27,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $checkResult = "<span style='color:red'>Try the magic word 'fred'</span>"
     }
-}
 
 // Now, render the HTML page, embedding the dynamic content.
 // The form's 'action' is set to the current file (index.php) and the method is 'post'.
